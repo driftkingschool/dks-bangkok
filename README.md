@@ -24,10 +24,18 @@ Single flagship package:
 
 ## Language switching
 
-- **Default:** English (`lang="en"`, `dir="ltr"`)
-- **Alternative:** Hebrew (`lang="he"`, `dir="rtl"`)
+- **Trilingual:** English (default) / Hebrew / Thai
+- **EN:** `lang="en"`, `dir="ltr"` — Inter font
+- **HE:** `lang="he"`, `dir="rtl"` — Heebo font
+- **TH:** `lang="th"`, `dir="ltr"` — Noto Sans Thai font
 - Preference persisted in `localStorage['dks-bangkok-lang']`
 - Two always-visible toggles: navbar pill + floating bottom-right button
+- Floating button cycles: EN → עברית → ไทย → EN
+
+## Live site
+
+- **URL:** https://driftkingschool.github.io/dks-bangkok/
+- **Repo:** https://github.com/driftkingschool/dks-bangkok
 
 ## Local preview
 
