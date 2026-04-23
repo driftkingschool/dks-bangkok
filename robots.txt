@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://driftkingschool.github.io/dks-bangkok/sitemap.xml
