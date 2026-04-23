@@ -27,6 +27,7 @@
     --radius-lg: 22px;
     --font-en: 'Inter', 'Heebo', system-ui, sans-serif;
     --font-he: 'Heebo', 'Inter', system-ui, sans-serif;
+    --font-th: 'Noto Sans Thai', 'Inter', system-ui, sans-serif;
     --nav-h: 74px;
 }
 
@@ -45,6 +46,9 @@ body {
 }
 
 html[dir="rtl"] body { font-family: var(--font-he); }
+html[data-lang="th"] body { font-family: var(--font-th); }
+html[data-lang="th"] .hero-title { letter-spacing: normal; line-height: 1.15; }
+html[data-lang="th"] .section-title { letter-spacing: normal; }
 
 img, video, svg { max-width: 100%; display: block; }
 
@@ -920,13 +924,15 @@ section { padding: 110px 0; position: relative; }
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1100px) {
+    .lang-btn .lang-label { display: none; }
+    .lang-btn { padding: 8px 10px; gap: 0; }
+}
 @media (max-width: 960px) {
     .nav-links { display: none; }
     .hamburger { display: flex; }
     .lang-toggle { margin-inline-start: auto; }
-    .lang-btn .lang-label { display: none; }
-    .lang-btn { padding: 8px 10px; }
-    .nav-container { gap: 12px; padding: 0 18px; }
+    .nav-container { gap: 10px; padding: 0 16px; }
     .signature-meta { grid-template-columns: 1fr; }
     .signature-features { grid-template-columns: 1fr; }
     .footer-grid { grid-template-columns: 1fr; gap: 36px; }

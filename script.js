@@ -8,14 +8,18 @@
 
     const STORAGE_KEY = 'dks-bangkok-lang';
     const DEFAULT_LANG = 'en';
+    const LANG_CYCLE = ['en', 'he', 'th'];
+    const LANG_LABELS = { en: 'English', he: 'עברית', th: 'ไทย' };
 
     /* ---------- LANGUAGE SWITCHING ---------- */
     function applyLanguage(lang) {
+        if (!LANG_CYCLE.includes(lang)) lang = DEFAULT_LANG;
         const html = document.documentElement;
         html.lang = lang;
         html.dir = lang === 'he' ? 'rtl' : 'ltr';
+        html.setAttribute('data-lang', lang);
 
-        // Update every element with data-en / data-he
+        // Update every element with data-en / data-he / data-th
         document.querySelectorAll('[data-en]').forEach((el) => {
             const val = el.getAttribute('data-' + lang);
             if (val === null) return;
@@ -36,10 +40,12 @@
             btn.setAttribute('aria-pressed', active ? 'true' : 'false');
         });
 
-        // Update floating button text — shows the OTHER language
+        // Update floating button text — shows the NEXT language in the cycle
         const floatText = document.getElementById('langFloatText');
         if (floatText) {
-            floatText.textContent = lang === 'en' ? 'עברית' : 'English';
+            const idx = LANG_CYCLE.indexOf(lang);
+            const next = LANG_CYCLE[(idx + 1) % LANG_CYCLE.length];
+            floatText.textContent = LANG_LABELS[next];
         }
 
         try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) { /* ignore */ }
@@ -61,8 +67,10 @@
         const float = document.getElementById('langFloat');
         if (float) {
             float.addEventListener('click', () => {
-                const current = document.documentElement.lang === 'he' ? 'he' : 'en';
-                applyLanguage(current === 'en' ? 'he' : 'en');
+                const current = document.documentElement.lang;
+                const idx = LANG_CYCLE.indexOf(current);
+                const next = LANG_CYCLE[(idx + 1) % LANG_CYCLE.length];
+                applyLanguage(next);
             });
         }
     }
