@@ -584,6 +584,115 @@ section { padding: 110px 0; position: relative; }
     line-height: 1.6;
 }
 
+/* ===== VEHICLE / DRIFT MACHINE ===== */
+.vehicle { background: var(--bg); position: relative; overflow: hidden; }
+.vehicle::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px 400px at 50% 0%, rgba(200, 168, 90, 0.06), transparent 70%);
+    pointer-events: none;
+}
+.vehicle-card {
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    background: linear-gradient(165deg, #0f1115 0%, #1a1d24 100%);
+    color: #fff;
+    border-radius: 28px;
+    padding: 56px 48px 48px;
+    box-shadow: var(--shadow-lg), 0 0 0 1.5px rgba(200, 168, 90, 0.4);
+    overflow: hidden;
+    isolation: isolate;
+    text-align: center;
+}
+.vehicle-glow {
+    position: absolute;
+    top: -120px;
+    inset-inline-end: -120px;
+    width: 360px; height: 360px;
+    background: radial-gradient(circle, rgba(200, 168, 90, 0.4), transparent 70%);
+    filter: blur(50px);
+    z-index: -1;
+    pointer-events: none;
+}
+.vehicle-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    color: #0a0a0a;
+    padding: 8px 22px;
+    border-radius: 999px;
+    font-weight: 900;
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    box-shadow: 0 6px 18px rgba(200, 168, 90, 0.4);
+}
+.vehicle-header {
+    padding-bottom: 36px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    margin-bottom: 36px;
+}
+.vehicle-name {
+    font-size: clamp(40px, 6vw, 64px);
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: -1.5px;
+    margin-bottom: 12px;
+    line-height: 1;
+}
+.vehicle-tagline {
+    font-size: 15px;
+    color: var(--gold-light);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.vehicle-specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 22px;
+    margin-bottom: 36px;
+    text-align: start;
+}
+.spec-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 16px 18px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 14px;
+}
+.spec-item-wide { grid-column: 1 / -1; }
+.spec-icon-wrap {
+    flex-shrink: 0;
+    width: 44px; height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 6px 16px rgba(200, 168, 90, 0.3);
+}
+.spec-icon-wrap svg { width: 22px; height: 22px; color: #0a0a0a; }
+.spec-content { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.spec-content strong {
+    font-size: 11px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--gold-light);
+}
+.spec-content span {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.92);
+    font-weight: 500;
+    line-height: 1.4;
+}
+.vehicle-cta-wrap { text-align: center; }
+.vehicle-cta-wrap .btn { display: inline-flex; }
+
 /* ===== SIGNATURE PACKAGE ===== */
 .packages { background: var(--bg-alt); }
 
@@ -941,6 +1050,8 @@ section { padding: 110px 0; position: relative; }
     .stat-divider { display: none; }
     .signature-card { padding: 40px 24px 32px; }
     .nav-branch { display: none; }
+    .vehicle-card { padding: 40px 22px 32px; }
+    .vehicle-specs { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 600px) {
