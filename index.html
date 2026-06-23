@@ -602,8 +602,8 @@
       +'var s=document.createElement("script");'
       +'s.src="https://www.paypal.com/sdk/js?client-id='+CLIENT_ID+'&components=hosted-buttons&disable-funding=venmo&currency='+cur+'";'
       +'s.onload=function(){try{if(window.paypal&&paypal.HostedButtons){var p=paypal.HostedButtons({hostedButtonId:"'+BTN[cur]+'"}).render("#pp");if(p&&p.then)p.then(h);}}catch(e){}setTimeout(h,1200);setTimeout(h,2500);};'
-      +'function h(){try{parent.postMessage({ppHeight:document.body.scrollHeight},"*")}catch(e){}}'
-      +'document.head.appendChild(s);if(window.ResizeObserver)new ResizeObserver(h).observe(document.body);'
+      +'function h(){try{var t=(document.getElementById("pp")||document.body).scrollHeight;parent.postMessage({ppHeight:t},"*")}catch(e){}}'
+      +'document.head.appendChild(s);if(window.ResizeObserver)new ResizeObserver(h).observe(document.getElementById("pp")||document.body);setInterval(h,1500);'
       +'<\/script></body></html>';
   }
   function setCur(cur){
@@ -619,7 +619,7 @@
     if(!frame) return;
     var b=document.querySelectorAll(".cur-btn");
     for(var i=0;i<b.length;i++) b[i].addEventListener("click",function(){ userPicked=true; setCur(this.getAttribute("data-cur")); });
-    window.addEventListener("message",function(e){ if(e.data&&typeof e.data.ppHeight==="number"){ frame.style.height=Math.max(120,e.data.ppHeight+4)+"px"; } });
+    window.addEventListener("message",function(e){ if(e.data&&typeof e.data.ppHeight==="number"){ var hh=Math.min(440,Math.max(150,e.data.ppHeight+6)); frame.style.height=hh+"px"; } });
     setCur(langDefault());
     new MutationObserver(function(){ if(!userPicked) setCur(langDefault()); }).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
   }
