@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-en="Drift King School Bangkok – 3-Hour Premium Experience" data-he="Drift King School בנגקוק – חוויית 3 שעות פרימיום" data-th="Drift King School กรุงเทพฯ – ประสบการณ์พรีเมียม 3 ชั่วโมง">Drift King School Bangkok – 3-Hour Premium Experience</title>
-    <meta name="description" data-en="Drift King School Bangkok branch. Premium 3-hour drifting experience at SPEEDWAY Bangkok, Thailand, with Lavi Ochayon: official drift racer and certified instructor." data-he="סניף בנגקוק של Drift King School. חוויית דריפט של 3 שעות במסלול SPEEDWAY תאילנד, עם לביא אוחיון: נהג מירוצים רשמי בדריפט ומדריך מוסמך." data-th="สาขากรุงเทพฯ ของ Drift King School ประสบการณ์ดริฟท์พรีเมียม 3 ชั่วโมงที่ SPEEDWAY กรุงเทพฯ ประเทศไทย กับ Lavi Ochayon นักแข่งดริฟท์อย่างเป็นทางการและผู้สอนที่ได้รับการรับรอง">
+    <title data-en="Drift King School Bangkok – 5-Hour Premium Experience" data-he="Drift King School בנגקוק – חוויית 5 שעות פרימיום" data-th="Drift King School กรุงเทพฯ – ประสบการณ์พรีเมียม 5 ชั่วโมง">Drift King School Bangkok – 5-Hour Premium Experience</title>
+    <meta name="description" data-en="Drift King School Bangkok branch. Premium 5-hour drifting experience at SPEEDWAY Bangkok, Thailand, with Lavi Ochayon: official drift racer and certified instructor." data-he="סניף בנגקוק של Drift King School. חוויית דריפט של 5 שעות במסלול SPEEDWAY תאילנד, עם לביא אוחיון: נהג מירוצים רשמי בדריפט ומדריך מוסמך." data-th="สาขากรุงเทพฯ ของ Drift King School ประสบการณ์ดริฟท์พรีเมียม 5 ชั่วโมงที่ SPEEDWAY กรุงเทพฯ ประเทศไทย กับ Lavi Ochayon นักแข่งดริฟท์อย่างเป็นทางการและผู้สอนที่ได้รับการรับรอง">
 
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Drift King School Bangkok – 3-Hour Premium Experience">
-    <meta property="og:description" content="Premium drifting experience at SPEEDWAY Bangkok, Thailand. 3 hours with an official drift racer and certified instructor.">
+    <meta property="og:title" content="Drift King School Bangkok – 5-Hour Premium Experience">
+    <meta property="og:description" content="Premium drifting experience at SPEEDWAY Bangkok, Thailand. 5 hours with an official drift racer and certified instructor.">
     <meta property="og:image" content="https://driftkingschool.github.io/dks-bangkok/logo.png">
     <meta property="og:url" content="https://driftkingschool.github.io/dks-bangkok/">
     <meta property="og:site_name" content="Drift King School Bangkok">
@@ -37,7 +37,7 @@
       "@type": "LocalBusiness",
       "@id": "https://driftkingschool.github.io/dks-bangkok/#business",
       "name": "Drift King School Bangkok",
-      "description": "Premium 3-hour drifting experience at SPEEDWAY Bangkok, Thailand, with an official drift racer and certified instructor.",
+      "description": "Premium 5-hour drifting experience at SPEEDWAY Bangkok, Thailand, with an official drift racer and certified instructor.",
       "url": "https://driftkingschool.github.io/dks-bangkok/",
       "logo": "https://driftkingschool.github.io/dks-bangkok/logo.png",
       "image": "https://driftkingschool.github.io/dks-bangkok/logo.png",
@@ -66,7 +66,7 @@
       ],
       "makesOffer": {
         "@type": "Offer",
-        "name": "Drift King Bangkok 3-Hour Experience",
+        "name": "Drift King Bangkok 5-Hour Experience",
         "price": "45000",
         "priceCurrency": "THB",
         "availability": "https://schema.org/InStock",
@@ -79,6 +79,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700;900&family=Noto+Sans+Thai:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <style>
+      .pay-block { margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(0,0,0,0.08); }
+      .pay-block .features-title { text-align: center; }
+      .pay-currency { display:flex; flex-wrap:wrap; align-items:center; justify-content:center; gap:8px; margin:14px 0 18px; }
+      .pay-currency-label { font-weight:700; font-size:14px; color: var(--muted, #6b6b6b); }
+      .cur-btn { padding:8px 16px; border-radius:50px; border:1.5px solid rgba(0,0,0,0.15); background:#fff; color: var(--ink, #141413); font-weight:700; font-size:14px; font-family:inherit; cursor:pointer; transition: background .15s, border-color .15s, color .15s; }
+      .cur-btn:hover { border-color: var(--gold-dark, #b8860b); }
+      .cur-btn.active { background: var(--gold-dark, #b8860b); border-color: var(--gold-dark, #b8860b); color:#fff; }
+      .paypal-frame { width:100%; max-width:360px; margin:0 auto; display:block; border:0; min-height:160px; }
+      .pay-note { text-align:center; font-size:12.5px; color: var(--muted, #6b6b6b); margin-top: 12px; }
+      html[dir="rtl"] .pay-currency { direction: rtl; }
+    </style>
 </head>
 <body>
 
@@ -251,19 +263,19 @@
             <span class="title-line" data-en="Drift Like A King" data-he="תנהגו כמלכים" data-th="ดริฟท์แบบราชา">Drift Like A King</span>
             <span class="title-line accent" data-en="in <span class='highlight'>Bangkok</span>" data-he="בלב <span class='highlight'>בנגקוק</span>" data-th="ที่<span class='highlight'>กรุงเทพฯ</span>">in <span class="highlight">Bangkok</span></span>
         </h1>
-        <p class="hero-sub" data-en="A 3-hour premium drifting experience at SPEEDWAY Bangkok. Coached personally by Lavi Ochayon: official drift racer and certified instructor. No experience required." data-he="חוויית דריפט פרימיום של 3 שעות במסלול SPEEDWAY בנגקוק. בהדרכה אישית של לביא אוחיון: נהג מירוצים רשמי בדריפט ומדריך מוסמך. ללא ניסיון קודם." data-th="ประสบการณ์ดริฟท์พรีเมียม 3 ชั่วโมงที่ SPEEDWAY กรุงเทพฯ โค้ชส่วนตัวโดย Lavi Ochayon นักแข่งดริฟท์อย่างเป็นทางการและผู้สอนที่ได้รับการรับรอง ไม่ต้องมีประสบการณ์">A 3-hour premium drifting experience at SPEEDWAY Bangkok. Coached personally by Lavi Ochayon: official drift racer and certified instructor. No experience required.</p>
+        <p class="hero-sub" data-en="A 5-hour premium drifting experience at SPEEDWAY Bangkok. Coached personally by Lavi Ochayon: official drift racer and certified instructor. No experience required." data-he="חוויית דריפט פרימיום של 5 שעות במסלול SPEEDWAY בנגקוק. בהדרכה אישית של לביא אוחיון: נהג מירוצים רשמי בדריפט ומדריך מוסמך. ללא ניסיון קודם." data-th="ประสบการณ์ดริฟท์พรีเมียม 5 ชั่วโมงที่ SPEEDWAY กรุงเทพฯ โค้ชส่วนตัวโดย Lavi Ochayon นักแข่งดริฟท์อย่างเป็นทางการและผู้สอนที่ได้รับการรับรอง ไม่ต้องมีประสบการณ์">A 5-hour premium drifting experience at SPEEDWAY Bangkok. Coached personally by Lavi Ochayon: official drift racer and certified instructor. No experience required.</p>
         <div class="hero-actions">
             <a href="#package" class="btn btn-primary skew-btn">
                 <span data-en="View Package" data-he="לחבילה" data-th="ดูแพ็คเกจ">View Package</span>
                 <svg class="icon arrow-forward"><use href="#i-arrow-right"/></svg>
             </a>
-            <a href="https://wa.me/972537757323?text=Hi!%20I'm%20interested%20in%20the%20Drift%20King%20Bangkok%203-hour%20experience%20(฿45,000)." target="_blank" rel="noopener" class="btn btn-outline skew-btn">
+            <a href="https://wa.me/972537757323?text=Hi!%20I'm%20interested%20in%20the%20Drift%20King%20Bangkok%205-hour%20experience%20(฿45,000)." target="_blank" rel="noopener" class="btn btn-outline skew-btn">
                 <svg class="icon"><use href="#i-whatsapp"/></svg>
                 <span data-en="WhatsApp Us" data-he="וואטסאפ" data-th="ติดต่อ WhatsApp">WhatsApp Us</span>
             </a>
         </div>
         <div class="hero-stats">
-            <div class="stat"><span class="stat-num" data-count="3">0</span><span class="stat-label" data-en="Hours of Pure Drift" data-he="שעות דריפט טהור" data-th="ชั่วโมงดริฟท์เต็มรูปแบบ">Hours of Pure Drift</span></div>
+            <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label" data-en="Hours of Pure Drift" data-he="שעות דריפט טהור" data-th="ชั่วโมงดริฟท์เต็มรูปแบบ">Hours of Pure Drift</span></div>
             <div class="stat-divider"></div>
             <div class="stat"><span class="stat-num" data-count="12">0</span><span class="stat-plus">+</span><span class="stat-label" data-en="Years of Mastery" data-he="שנות ניסיון" data-th="ปีแห่งความเชี่ยวชาญ">Years of Mastery</span></div>
             <div class="stat-divider"></div>
@@ -277,9 +289,13 @@
 </section>
 
 <!-- ===== EXPERIENCE / ADVANTAGES ===== -->
-<section class="advantages" id="experience">
-    <div class="section-container">
-        <div class="section-header">
+<section class="advantages scrub-scene" id="experience">
+    <div class="scrub-sticky">
+        <video class="scrub-video" muted playsinline preload="auto" poster="speedway-th-poster.jpg" aria-hidden="true">
+            <source src="speedway-th-scrub.mp4" type="video/mp4">
+        </video>
+        <div class="scrub-overlay" aria-hidden="true"></div>
+        <div class="scrub-header">
             <span class="section-tag" data-en="Why Drift King School Bangkok?" data-he="למה Drift King School בנגקוק?" data-th="ทำไมต้อง Drift King School กรุงเทพฯ?">Why Drift King School Bangkok?</span>
             <h2 class="section-title">
                 <span data-en="The Ultimate" data-he="חוויית הנהיגה" data-th="สุดยอด">The Ultimate</span>
@@ -342,7 +358,7 @@
                 <span data-en="Bangkok's" data-he="כלי הדריפט" data-th="อาวุธดริฟท์">Bangkok's</span>
                 <span class="highlight" data-en="Drift Weapon" data-he="של בנגקוק" data-th="แห่งกรุงเทพฯ">Drift Weapon</span>
             </h2>
-            <p class="section-desc" data-en="A purpose-built track car. Naturally aspirated V8, full carbon body, and a transmission tuned for full attack." data-he="רכב מסלול שנבנה ייעודית. מנוע V8 אטמוספרי, שלדה מלאת קרבון, ותיבת הילוכים בנויה למתקפה מלאה." data-th="รถสนามที่สร้างขึ้นโดยเฉพาะ เครื่อง V8 NA บอดี้คาร์บอนเต็มคัน และเกียร์ที่จูนพร้อมโจมตีเต็มพิกัด">A purpose-built track car. Naturally aspirated V8, full carbon body, and a transmission tuned for full attack.</p>
+            <p class="section-desc" data-en="A race car professionally modified specifically for drift championships, prepared and tuned for SPEEDWAY Bangkok." data-he="רכב מירוצים משופר בצורה מקצועית, ספציפית לאליפויות דריפט, מוכן ומכוונן עבור SPEEDWAY בנגקוק." data-th="รถแข่งที่ปรับแต่งอย่างมืออาชีพ เฉพาะสำหรับการแข่งขันดริฟท์ จัดเตรียมและจูนสำหรับ SPEEDWAY กรุงเทพฯ">A race car professionally modified specifically for drift championships, prepared and tuned for SPEEDWAY Bangkok.</p>
         </div>
 
         <div class="vehicle-card">
@@ -355,8 +371,8 @@
             </div>
 
             <div class="vehicle-header">
-                <h3 class="vehicle-name" data-en="Nissan Cefiro" data-he="ניסאן ספירו" data-th="นิสสัน เซฟิโร">Nissan Cefiro</h3>
-                <p class="vehicle-tagline" data-en="Full Carbon · Full Race Setup · 390 HP" data-he="קרבון מלא · כיוון מירוץ · 390 כ&quot;ס" data-th="คาร์บอนเต็มคัน · เซ็ตอัพแข่ง · 390 แรงม้า">Full Carbon · Full Race Setup · 390 HP</p>
+                <h3 class="vehicle-name" data-en="Championship-Spec Drift Car" data-he="רכב דריפט ברמת אליפות" data-th="รถดริฟท์สเปคแชมป์">Championship-Spec Drift Car</h3>
+                <p class="vehicle-tagline" data-en="A race car professionally modified specifically for drift championships" data-he="רכב מירוצים משופר בצורה מקצועית, ספציפית לאליפויות דריפט" data-th="รถแข่งที่ปรับแต่งอย่างมืออาชีพ เฉพาะสำหรับการแข่งขันดริฟท์">A race car professionally modified specifically for drift championships</p>
             </div>
 
             <div class="vehicle-specs">
@@ -371,21 +387,21 @@
                     <div class="spec-icon-wrap"><svg class="spec-icon"><use href="#i-flame"/></svg></div>
                     <div class="spec-content">
                         <strong data-en="Engine" data-he="מנוע" data-th="เครื่องยนต์">Engine</strong>
-                        <span data-en="Toyota 3UZ V8 · Naturally Aspirated" data-he="טויוטה 3UZ V8 · אטמוספרי" data-th="Toyota 3UZ V8 · ดูดอากาศธรรมชาติ">Toyota 3UZ V8 · Naturally Aspirated</span>
+                        <span data-en="Naturally Aspirated V8" data-he="V8 אטמוספרי" data-th="V8 ดูดอากาศธรรมชาติ">Naturally Aspirated V8</span>
                     </div>
                 </div>
                 <div class="spec-item">
                     <div class="spec-icon-wrap"><svg class="spec-icon"><use href="#i-target"/></svg></div>
                     <div class="spec-content">
                         <strong data-en="Power" data-he="הספק" data-th="พลัง">Power</strong>
-                        <span data-en="390 HP · MaxxECU Tuned" data-he="390 כ&quot;ס · כיול MaxxECU" data-th="390 แรงม้า · จูนด้วย MaxxECU">390 HP · MaxxECU Tuned</span>
+                        <span data-en="Fully race-tuned" data-he="מכוונן מירוץ מלא" data-th="จูนสำหรับการแข่งเต็มรูปแบบ">Fully race-tuned</span>
                     </div>
                 </div>
                 <div class="spec-item">
                     <div class="spec-icon-wrap"><svg class="spec-icon"><use href="#i-repeat"/></svg></div>
                     <div class="spec-content">
                         <strong data-en="Gearbox" data-he="תיבת הילוכים" data-th="เกียร์">Gearbox</strong>
-                        <span data-en="Nissan 350Z" data-he="ניסאן 350Z" data-th="Nissan 350Z">Nissan 350Z</span>
+                        <span data-en="Race-spec gearbox" data-he="תיבת הילוכים ספורטיבית" data-th="เกียร์สเปคแข่ง">Race-spec gearbox</span>
                     </div>
                 </div>
                 <div class="spec-item spec-item-wide">
@@ -416,7 +432,7 @@
                 <span data-en="One Signature" data-he="חבילת הדגל" data-th="แพ็คเกจเรือธง">One Signature</span>
                 <span class="highlight" data-en="Package" data-he="של בנגקוק" data-th="เพียงหนึ่งเดียว">Package</span>
             </h2>
-            <p class="section-desc" data-en="One package, no compromises. 3 hours that turn first-timers into drifters." data-he="חבילה אחת בלבד, ללא פשרות. 3 שעות שהופכות מתחילים לנהגי דריפט." data-th="แพ็คเกจเดียว ไม่ประนีประนอม 3 ชั่วโมงที่เปลี่ยนมือใหม่ให้เป็นนักดริฟท์">One package, no compromises. 3 hours that turn first-timers into drifters.</p>
+            <p class="section-desc" data-en="One package, no compromises. A 5-hour experience (about 4 hours of driving plus a 1-hour break in the middle) that turns first-timers into drifters, for 1 to 6 people." data-he="חבילה אחת בלבד, ללא פשרות. חוויה של 5 שעות (כ-4 שעות נהיגה ושעת הפסקה באמצע) שהופכת מתחילים לנהגי דריפט, ל-1 עד 6 משתתפים." data-th="แพ็คเกจเดียว ไม่ประนีประนอม ประสบการณ์ 5 ชั่วโมง (ขับประมาณ 4 ชั่วโมง บวกพัก 1 ชั่วโมงตรงกลาง) ที่เปลี่ยนมือใหม่ให้เป็นนักดริฟท์ สำหรับ 1 ถึง 6 คน">One package, no compromises. A 5-hour experience (about 4 hours of driving plus a 1-hour break in the middle) that turns first-timers into drifters, for 1 to 6 people.</p>
         </div>
 
         <!-- Signature package card -->
@@ -430,7 +446,7 @@
 
             <div class="signature-header">
                 <h3 class="signature-name">Drift King Bangkok</h3>
-                <p class="signature-subtitle" data-en="3-Hour Premium Drift Experience" data-he="חוויית דריפט פרימיום • 3 שעות" data-th="ประสบการณ์ดริฟท์พรีเมียม 3 ชั่วโมง">3-Hour Premium Drift Experience</p>
+                <p class="signature-subtitle" data-en="5-Hour Premium Drift Experience" data-he="חוויית דריפט פרימיום • 5 שעות" data-th="ประสบการณ์ดริฟท์พรีเมียม 5 ชั่วโมง">5-Hour Premium Drift Experience</p>
 
                 <div class="signature-price">
                     <span class="price-currency">฿</span>
@@ -444,7 +460,7 @@
                     <svg class="meta-icon"><use href="#i-clock"/></svg>
                     <div>
                         <strong data-en="Duration" data-he="משך" data-th="ระยะเวลา">Duration</strong>
-                        <span data-en="3 hours on track" data-he="3 שעות על המסלול" data-th="3 ชั่วโมงในสนาม">3 hours on track</span>
+                        <span data-en="5-hour experience, 10:00–15:00 (~4 h driving + 1 h break)" data-he="חוויה של 5 שעות, 10:00–15:00 (כ-4 שעות נהיגה + שעת הפסקה)" data-th="ประสบการณ์ 5 ชม. 10:00–15:00 (ขับ ~4 ชม. + พัก 1 ชม.)">5-hour experience, 10:00–15:00 (~4 h driving + 1 h break)</span>
                     </div>
                 </div>
                 <div class="meta-item">
@@ -464,11 +480,18 @@
             </div>
 
             <div class="signature-body">
+                <h4 class="features-title" data-en="Your Day · 5-Hour Experience (≈4 h driving + 1 h break)" data-he="היום שלך · חוויה של 5 שעות (כ-4 שעות נהיגה + שעת הפסקה)" data-th="วันของคุณ · ประสบการณ์ 5 ชั่วโมง (ขับ ~4 ชม. + พัก 1 ชม.)">Your Day · 5-Hour Experience (≈4 h driving + 1 h break)</h4>
+                <ul class="signature-features">
+                    <li><svg class="check"><use href="#i-clock"/></svg><span data-en="10:00–12:00 · On track: personal instruction, drift-taxi ride-along, demo drives, and plenty of throttle and drills" data-he="10:00–12:00 · על המסלול: הדרכה אישית, סבב טקסי דריפט, הדגמות נהיגה, והרבה גז ותרגולים" data-th="10:00–12:00 · ในสนาม: สอนแบบส่วนตัว นั่งรถดริฟท์แท็กซี่ สาธิตการขับขี่ และเหยียบคันเร่งกับฝึกซ้อมเต็มที่">10:00–12:00 · On track: personal instruction, drift-taxi ride-along, demo drives, and plenty of throttle and drills</span></li>
+                    <li><svg class="check"><use href="#i-clock"/></svg><span data-en="12:00–13:00 · Lunch break" data-he="12:00–13:00 · הפסקת צהריים" data-th="12:00–13:00 · พักรับประทานอาหารกลางวัน">12:00–13:00 · Lunch break</span></li>
+                    <li><svg class="check"><use href="#i-clock"/></svg><span data-en="13:00–15:00 · Back on track, keep driving and putting it into practice" data-he="13:00–15:00 · חזרה למסלול, ממשיכים לנהוג ולתרגל" data-th="13:00–15:00 · กลับสู่สนาม ขับต่อและฝึกฝน">13:00–15:00 · Back on track, keep driving and putting it into practice</span></li>
+                    <li><svg class="check"><use href="#i-check"/></svg><span data-en="Fixed daily times · date set with us on WhatsApp · for 1 to 6 people (shareable)" data-he="שעות קבועות · התאריך נקבע איתנו בוואטסאפ · ל-1 עד 6 משתתפים (ניתן לחלוקה)" data-th="เวลาคงที่ · นัดวันกับเราทาง WhatsApp · สำหรับ 1 ถึง 6 คน (แบ่งกันได้)">Fixed daily times · date set with us on WhatsApp · for 1 to 6 people (shareable)</span></li>
+                </ul>
                 <h4 class="features-title" data-en="What's included" data-he="מה כלול" data-th="สิ่งที่รวมในแพ็คเกจ">What's included</h4>
                 <ul class="signature-features">
-                    <li><svg class="check"><use href="#i-check"/></svg><span data-en="3 full hours of professional drift coaching" data-he="3 שעות מלאות של הדרכת דריפט מקצועית" data-th="โค้ชดริฟท์มืออาชีพเต็ม 3 ชั่วโมง">3 full hours of professional drift coaching</span></li>
+                    <li><svg class="check"><use href="#i-check"/></svg><span data-en="A full 5-hour experience of professional drift coaching" data-he="חוויה מלאה של 5 שעות הדרכת דריפט מקצועית" data-th="ประสบการณ์เต็ม 5 ชั่วโมงกับการโค้ชดริฟท์มืออาชีพ">A full 5-hour experience of professional drift coaching</span></li>
                     <li><svg class="check"><use href="#i-check"/></svg><span data-en="Personal one-on-one mentoring by a certified pro instructor" data-he="הדרכה אישית צמודה ממדריך מקצועי מוסמך" data-th="การสอนส่วนตัวตัวต่อตัวจากผู้สอนมืออาชีพที่ได้รับการรับรอง">Personal one-on-one mentoring by a certified pro instructor</span></li>
-                    <li><svg class="check"><use href="#i-check"/></svg><span data-en="Nissan Cefiro · Full Carbon · 3UZ V8 · 390 HP MaxxECU · 350Z gearbox" data-he="ניסאן ספירו · קרבון מלא · 3UZ V8 · 390 כ&quot;ס MaxxECU · תיבת 350Z" data-th="Nissan Cefiro · คาร์บอนเต็มคัน · 3UZ V8 · 390 แรงม้า MaxxECU · เกียร์ 350Z">Nissan Cefiro · Full Carbon · 3UZ V8 · 390 HP MaxxECU · 350Z gearbox</span></li>
+                    <li><svg class="check"><use href="#i-check"/></svg><span data-en="Championship-spec drift car, professionally modified for SPEEDWAY Bangkok" data-he="רכב דריפט ברמת אליפות, משופר מקצועית עבור SPEEDWAY בנגקוק" data-th="รถดริฟท์สเปคแชมป์ ปรับแต่งอย่างมืออาชีพสำหรับ SPEEDWAY กรุงเทพฯ">Championship-spec drift car, professionally modified for SPEEDWAY Bangkok</span></li>
                     <li><svg class="check"><use href="#i-check"/></svg><span data-en="Taxi-drift ride-along with your instructor" data-he="סבב טקסי דריפט עם המדריך" data-th="นั่งรถดริฟท์ไปกับผู้สอน">Taxi-drift ride-along with your instructor</span></li>
                     <li><svg class="check"><use href="#i-check"/></svg><span data-en="Technical theory session & demo drives" data-he="הדרכה עיונית והדגמות נהיגה" data-th="ภาคทฤษฎีและการสาธิตการขับขี่">Technical theory session & demo drives</span></li>
                     <li><svg class="check"><use href="#i-check"/></svg><span data-en="Unlimited tires and fuel, no restrictions" data-he="צמיגים ודלק ללא הגבלה, בלי תנאים" data-th="ยางและเชื้อเพลิงไม่จำกัด ไม่มีเงื่อนไข">Unlimited tires and fuel, no restrictions</span></li>
@@ -478,14 +501,27 @@
                 </ul>
             </div>
 
+            <div class="pay-block">
+                <h4 class="features-title" data-en="Pay &amp; Reserve Your Spot" data-he="תשלום והבטחת מקום" data-th="ชำระเงินและจองที่นั่ง">Pay &amp; Reserve Your Spot</h4>
+                <div class="pay-currency" role="group" aria-label="Choose payment currency">
+                    <span class="pay-currency-label" data-en="Currency:" data-he="מטבע:" data-th="สกุลเงิน:">Currency:</span>
+                    <button type="button" class="cur-btn" data-cur="USD">$ USD</button>
+                    <button type="button" class="cur-btn" data-cur="EUR">€ EUR</button>
+                    <button type="button" class="cur-btn" data-cur="ILS">₪ ILS</button>
+                    <button type="button" class="cur-btn" data-cur="THB">฿ THB</button>
+                </div>
+                <iframe id="paypal-frame" class="paypal-frame" title="Secure payment" scrolling="no"></iframe>
+                <p class="pay-note" data-en="Secure checkout via PayPal, credit/debit card, or Apple Pay. After payment, we'll coordinate your date with you on WhatsApp." data-he="תשלום מאובטח דרך PayPal, כרטיס אשראי/דביט, או Apple Pay. אחרי התשלום נתאם איתך את התאריך בוואטסאפ." data-th="ชำระเงินปลอดภัยผ่าน PayPal บัตรเครดิต/เดบิต หรือ Apple Pay หลังชำระเงิน เราจะนัดวันของคุณทาง WhatsApp">Secure checkout via PayPal, credit/debit card, or Apple Pay. After payment, we'll coordinate your date with you on WhatsApp.</p>
+            </div>
+
             <div class="signature-cta-wrap signature-cta-single">
-                <a href="https://wa.me/972537757323?text=Hi!%20I'm%20interested%20in%20the%20Drift%20King%20Bangkok%203-hour%20experience%20(฿45,000)." target="_blank" rel="noopener" class="signature-cta skew-btn">
+                <a href="https://wa.me/972537757323?text=Hi!%20I'm%20interested%20in%20the%20Drift%20King%20Bangkok%205-hour%20experience%20(฿45,000)." target="_blank" rel="noopener" class="signature-cta skew-btn">
                     <svg class="icon"><use href="#i-whatsapp"/></svg>
                     <span data-en="Book on WhatsApp" data-he="הזמנה בוואטסאפ" data-th="จองผ่าน WhatsApp">Book on WhatsApp</span>
                 </a>
             </div>
 
-            <p class="signature-footnote" data-en="Limited slots available per week. Bookings confirmed with 50% deposit." data-he="מספר מצומצם של מקומות בשבוע. הזמנה מאושרת בתשלום מקדמה של 50%." data-th="จำนวนที่นั่งจำกัดต่อสัปดาห์ ยืนยันการจองด้วยมัดจำ 50%">Limited slots available per week. Bookings confirmed with 50% deposit.</p>
+            <p class="signature-footnote" data-en="Limited slots per week. Full payment upfront secures your spot, then we set your exact date together on WhatsApp." data-he="מספר מצומצם של מקומות בשבוע. תשלום מלא מראש שומר את מקומך, ואז נתאם יחד את התאריך המדויק בוואטסאפ." data-th="จำนวนที่นั่งจำกัดต่อสัปดาห์ ชำระเงินเต็มจำนวนล่วงหน้าเพื่อจองที่ของคุณ จากนั้นเรานัดวันที่แน่นอนร่วมกันทาง WhatsApp">Limited slots per week. Full payment upfront secures your spot, then we set your exact date together on WhatsApp.</p>
         </div>
     </div>
 </section>
@@ -554,5 +590,73 @@
 </button>
 
 <script src="script.js"></script>
+<script>
+(function(){
+  var CLIENT_ID="BAAzPJ9M5QhmuhfL2YDnLnIvd8LnqPVGUUnoP5wfkC4mlWsMok6NrYBpf_46gys6QgfbsfzrDhqClQ650Q";
+  var BTN={USD:"XWKK58V4XHT9G",EUR:"R2D7V9RG93R5E",ILS:"BM8FS4Q9K7RCU",THB:"4B94Z7BJQ8J94"};
+  var LANG_DEFAULT={en:"USD",he:"ILS",th:"THB"};
+  var userPicked=false,current=null,frame;
+  function buildPayHtml(cur){
+    return '<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+      +'<style>html,body{margin:0;padding:0;background:transparent}#pp{max-width:360px;margin:0 auto}</style></head><body><div id="pp"></div><script>'
+      +'var s=document.createElement("script");'
+      +'s.src="https://www.paypal.com/sdk/js?client-id='+CLIENT_ID+'&components=hosted-buttons&disable-funding=venmo&currency='+cur+'";'
+      +'s.onload=function(){try{if(window.paypal&&paypal.HostedButtons){var p=paypal.HostedButtons({hostedButtonId:"'+BTN[cur]+'"}).render("#pp");if(p&&p.then)p.then(h);}}catch(e){}setTimeout(h,1200);setTimeout(h,2500);};'
+      +'function h(){try{parent.postMessage({ppHeight:document.body.scrollHeight},"*")}catch(e){}}'
+      +'document.head.appendChild(s);if(window.ResizeObserver)new ResizeObserver(h).observe(document.body);'
+      +'<\/script></body></html>';
+  }
+  function setCur(cur){
+    if(!BTN[cur]||cur===current||!frame) return;
+    current=cur;
+    frame.srcdoc=buildPayHtml(cur);
+    var b=document.querySelectorAll(".cur-btn");
+    for(var i=0;i<b.length;i++) b[i].classList.toggle("active",b[i].getAttribute("data-cur")===cur);
+  }
+  function langDefault(){ return LANG_DEFAULT[document.documentElement.lang]||"USD"; }
+  function init(){
+    frame=document.getElementById("paypal-frame");
+    if(!frame) return;
+    var b=document.querySelectorAll(".cur-btn");
+    for(var i=0;i<b.length;i++) b[i].addEventListener("click",function(){ userPicked=true; setCur(this.getAttribute("data-cur")); });
+    window.addEventListener("message",function(e){ if(e.data&&typeof e.data.ppHeight==="number"){ frame.style.height=Math.max(120,e.data.ppHeight+4)+"px"; } });
+    setCur(langDefault());
+    new MutationObserver(function(){ if(!userPicked) setCur(langDefault()); }).observe(document.documentElement,{attributes:true,attributeFilter:["lang"]});
+  }
+  if(document.readyState==="loading") document.addEventListener("DOMContentLoaded",init); else init();
+})();
+</script>
+<script>
+(function(){
+  var scene = document.querySelector(".scrub-scene");
+  if(!scene) return;
+  var video = scene.querySelector(".scrub-video");
+  var steps = [].slice.call(scene.querySelectorAll(".adv-card"));
+  if(!video || !steps.length) return;
+  if(window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    scene.classList.add("no-scrub");
+    steps.forEach(function(s){ s.classList.add("active"); });
+    return;
+  }
+  try { video.load(); } catch(e){}
+  function update(){
+    var top = scene.getBoundingClientRect().top;
+    var dist = scene.offsetHeight - window.innerHeight;
+    var progress = dist > 0 ? Math.min(1, Math.max(0, (-top) / dist)) : 0;
+    var d = video.duration;
+    if(d && isFinite(d)){
+      var t = progress * (d - 0.05);
+      if(Math.abs(video.currentTime - t) > 0.01){ try { video.currentTime = t; } catch(e){} }
+    }
+    var idx = Math.floor(progress * steps.length - 0.0001);
+    if(idx < 0) idx = 0; if(idx > steps.length - 1) idx = steps.length - 1;
+    for(var i=0;i<steps.length;i++){ steps[i].classList.toggle("active", i === idx); }
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  ["loadedmetadata","loadeddata","durationchange","canplay"].forEach(function(ev){ video.addEventListener(ev, update); });
+  update();
+})();
+</script>
 </body>
 </html>
