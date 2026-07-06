@@ -17,8 +17,8 @@ dks-bangkok/
 ## The experience
 
 Single flagship package:
-- **Drift King Bangkok** — 3-hour premium drift experience
-- **Price:** ฿45,000 (all inclusive)
+- **Drift King Bangkok** — 5-hour premium drift experience
+- **Price:** $1,250 (all inclusive; USD/EUR/ILS/THB at checkout)
 - **Location:** SPEEDWAY Bangkok, Thailand
 - **Instructor:** Lavi Ochayon, Israel's drift champion
 
