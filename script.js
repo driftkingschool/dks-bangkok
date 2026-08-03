@@ -1,6 +1,6 @@
 /* ==========================================================
    DRIFT KING SCHOOL BANGKOK — SCRIPT
-   Language switching (EN/HE), nav, particles, counters, reveal
+   Language switching (EN/HE/TH), nav, particles, counters, reveal
    ========================================================== */
 
 (function () {
@@ -54,6 +54,9 @@
     function initLanguage() {
         let saved = DEFAULT_LANG;
         try { saved = localStorage.getItem(STORAGE_KEY) || DEFAULT_LANG; } catch (e) { /* ignore */ }
+
+        const urlLang = new URLSearchParams(window.location.search).get('lang');
+        if (urlLang && LANG_CYCLE.includes(urlLang)) saved = urlLang;
 
         applyLanguage(saved);
 

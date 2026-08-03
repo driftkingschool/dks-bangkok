@@ -1,6 +1,6 @@
 # Drift King School — Bangkok Landing Page
 
-Bilingual (EN/HE) landing page for the Bangkok branch of Drift King School at SPEEDWAY Bangkok, Thailand.
+Trilingual (EN/HE/TH) landing page for the Bangkok branch of Drift King School at SPEEDWAY Bangkok, Thailand.
 
 ## Structure
 
@@ -20,7 +20,7 @@ Single flagship package:
 - **Drift King Bangkok** — 5-hour premium drift experience
 - **Price:** $1,250 (all inclusive; USD/EUR/ILS/THB at checkout)
 - **Location:** SPEEDWAY Bangkok, Thailand
-- **Instructor:** Lavi Ochayon, Israel's drift champion
+- **Instructor:** Lavi Ochayon — official drift racer & certified instructor
 
 ## Language switching
 
