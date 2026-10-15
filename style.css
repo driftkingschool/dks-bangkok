@@ -577,7 +577,7 @@ section { padding: 110px 0; position: relative; }
 .scrub-scene .adv-card p { font-size: clamp(16px, 2.2vw, 21px); color: rgba(255, 255, 255, 0.92); }
 @media (prefers-reduced-motion: reduce) {
     .scrub-scene { height: auto; }
-    .scrub-sticky { position: static; height: auto; padding: 80px 0; background: #07080a url("speedway-th-poster.jpg") center/cover no-repeat; }
+    .scrub-sticky { position: static; height: auto; padding: 80px 0; background: #07080a url("speedway-th-poster.webp") center/cover no-repeat; }
     .scrub-video { display: none; }
     .scrub-scene .advantages-grid { position: static; }
     .scrub-scene .adv-card { position: static; opacity: 1; transform: none; min-height: 55vh; }
